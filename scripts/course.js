@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 ]
 
   const container = document.getElementById("courses-container");
+  const creditDisplay = document.getElementById("total-credits");
 
   function createCourseCard(course) {
     const card = document.createElement("div");
@@ -100,14 +101,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderCourses(filter = "all") {
     container.innerHTML = "";
+
     const filtered = filter === "all"
       ? courses
       : courses.filter(course => course.subject.toLowerCase() === filter);
 
+    // Add course cards
     filtered.forEach(course => {
       const card = createCourseCard(course);
       container.appendChild(card);
     });
+
+    // Calculate and display total credits
+    const totalCredits = filtered.reduce((sum, course) => sum + course.credits, 0);
+    creditDisplay.textContent = `Total Credits: ${totalCredits}`;
   }
 
   // Button event listeners

@@ -163,6 +163,14 @@ section {
   background-color: #ffe6e6;
 }
 
+#total-credits {
+  font-weight: bold;
+  text-align: center;  /* Changed from right to center */
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+
 /* Figures */
 figure {
   text-align: center;
