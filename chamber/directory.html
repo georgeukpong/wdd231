@@ -9,17 +9,14 @@
   <!-- Facebook Open Graph Meta Tags -->
   <meta property="og:title" content="Abuja Chamber of Commerce Directory">
   <meta property="og:description" content="Explore the official directory of the Abuja Chamber of Commerce in Nigeria. Connect with local businesses, discover essential services, and grow your professional network within the community.">
-  <meta property="og:image" content="https://www.yoursite.com/images/abuja-chamber-logo.png">
-  <meta property="og:url" content="https://www.yoursite.com/chamber-directory">
+  <meta property="og:image" content="http://127.0.0.1:5501/wdd231/chamber/images/sitelogo.jpg">
+  <meta property="og:url" content="https://georgeukpong.github.io/wdd231/chamber/directory.html">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
-  <!-- Normalize CSS should come first -->
   <link rel="stylesheet" href="styles/normalize.css">
-
-  <!-- Then your custom styles -->
   <link rel="stylesheet" href="styles/directory.css">
   <link rel="stylesheet" href="styles/directory-large.css">
   <script src="scripts/members.js" defer></script>
@@ -33,37 +30,37 @@
   <header>
     <div class="logo-title">
       <img src="images/sitelogo.jpg" alt="Abuja Chamber of Commerce Logo">
-      <h1>Abuja Chamber of Commerce</h1>
+      <h1>Abuja Chamber of Commerce Directory</h1>
     </div>
     <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
     <nav id="main-nav">
-  <ul>
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="directory.html">Directory</a></li>
-    <li><a href="join.html">Join</a></li>
-    <li><a href="discover.html">Discover</a></li>
-  </ul>
-</nav>
-
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <!-- Page-specific content goes here -->
+    <!-- Toggle buttons (wrapped in div because no heading) -->
+    <div class="view-toggle">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </div>
 
-    <section class="view-toggle">
-  <button id="grid-view">Grid View</button>
-  <button id="list-view">List View</button>
-</section>
-
-<section id="directory" class="grid-view"></section>
-
+    <!-- Directory section with heading -->
+    <section id="directory" class="grid-view">
+      <h2>Member Business Listings</h2>
+      <!-- Business cards are dynamically injected here -->
+    </section>
   </main>
 
   <footer>
     <p>&copy; <span id="copyright-year"></span> 💪 George Ukpong 💪 Abuja, Nigeria</p>
     <p>All rights reserved | <a href="contact.html">Contact Us</a></p>
-      <p id="last-modified"></p>
-    </div>
+    <p id="last-modified"></p>
   </footer>
 </body>
 </html>
