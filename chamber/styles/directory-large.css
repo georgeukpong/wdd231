@@ -1,0 +1,63 @@
+@media screen and (min-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  nav ul li {
+    margin-bottom: 0;
+  }
+
+  /* List view layout on larger screens */
+  #directory.list-view .company-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f0fdf4;
+  }
+
+  #directory.list-view .company-card:nth-child(even) {
+    background-color: #e6f4ea;
+  }
+
+  #directory.list-view .company-card img {
+    display: none;
+  }
+
+  #directory.list-view .company-card h2,
+  #directory.list-view .company-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  #directory.list-view .company-card a {
+    color: #006400;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  /* Grid view layout on larger screens - 3 columns */
+  #directory.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
