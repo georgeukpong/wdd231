@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the official directory of the Abuja Chamber of Commerce in Nigeria. Connect with local businesses, discover essential services, and grow your professional network within the community.">
+  <meta name="author" content="George Ukpong">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Abuja Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore the official directory of the Abuja Chamber of Commerce in Nigeria. Connect with local businesses, discover essential services, and grow your professional network within the community.">
+  <meta property="og:image" content="https://georgeukpong.github.io/wdd231/chamber/images/sitelogo.jpg">
+  <meta property="og:url" content="https://georgeukpong.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/directory-large.css">
+  <link rel="icon" href="favicon.ico">
+
+  <script src="scripts/members.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+
+  <title>Abuja Chamber of Commerce</title>
+</head>
+
+<body class="home">
+  <header>
+    <div class="logo-title">
+      <img src="images/sitelogo.jpg" alt="Abuja Chamber of Commerce Logo">
+      <div class="site-title">
+        <h1>
+          <span class="abuja">Abuja</span><br>
+          <span class="chamber">Chamber of Commerce</span>
+        </h1>
+      </div>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/abuja-hero.jpg" alt="A scenic view of Abuja, Nigeria" class="hero-image">
+      <div class="hero-text">
+        <h2>Connecting Abuja’s Business Community</h2>
+        <p>Explore. Connect. Grow.</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+
+    <section class="home-section">
+  <h2>Home</h2>
+  <p>Welcome to our site! Stay updated with current events, weather conditions, and upcoming forecasts in your area.</p>
+
+  <div class="weather-box">
+    <div class="events">
+      <h3>Events</h3>
+      <ul>
+        <li>Business Conference - June 3</li>
+        <li>Fashion Expo - June 7</li>
+        <li>Local Art Fair - June 10</li>
+      </ul>
+    </div>
+
+    <div class="current-weather">
+      <h3>Current Weather</h3>
+      <img id="weather-icon" src="" alt="Weather icon">
+      <p><span id="current-temp">--</span>°F</p>
+      <p id="weather-desc">--</p>
+      <p><strong>High:</strong> <span id="high-temp">--</span>°</p>
+      <p><strong>Low:</strong> <span id="low-temp">--</span>°</p>
+      <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+      <p><strong>Sunrise:</strong> <span id="sunrise">--</span></p>
+      <p><strong>Sunset:</strong> <span id="sunset">--</span></p>
+    </div>
+
+    <div class="weather-forecast">
+      <h3>Weather Forecast</h3>
+      <p><strong>Today:</strong> <span id="forecast-day1">--</span>°F</p>
+      <p><strong>Wednesday:</strong> <span id="forecast-day2">--</span>°F</p>
+      <p><strong>Thursday:</strong> <span id="forecast-day3">--</span>°F</p>
+    </div>
+  </div>
+</section>
+
+<section id="spotlight-container" class="spotlight-section">
+  <!-- Spotlight cards will load here -->
+</section>
+
+
+
+
+  </main>
+
+  <footer class="site-footer">
+  <!-- Left Section -->
+  <div class="footer-info">
+    <p class="footer-heading">Abuja Chamber of Commerce</p>
+    <p>Plot 4807, FCT Abuja</p>
+    <p>Wuse Zone 6, Abuja, Nigeria</p>
+    <p><a href="mailto:info@abujachamber.org">info@abujachamber.org</a></p>
+    <p>(+234) 800-123-4567</p>
+  </div>
+
+  <!-- Middle Section -->
+  <div class="footer-social">
+    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <!-- Right Section -->
+  <div class="footer-project-info">
+    <p>WDD231 Class Project</p>
+    <p>George Ukpong</p>
+    <p>&copy; <span id="copyright-year-footer"></span> Abuja Chamber of Commerce</p>
+    <p>Last Modification: <span id="last-modified-footer"></span></p>
+  </div>
+</footer>
+
+</body>
+</html>

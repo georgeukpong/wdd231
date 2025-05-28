@@ -1,10 +1,9 @@
+/* ======================
+   Mobile-First Styles
+====================== */
+
 /* General Reset / Normalize Additions */
-body,
-h1,
-h2,
-h3,
-p,
-ul {
+body, h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -46,7 +45,7 @@ header {
   cursor: pointer;
 }
 
-/* NAVIGATION STYLING */
+/* NAVIGATION */
 #main-nav {
   display: none;
   flex-direction: column;
@@ -106,10 +105,9 @@ main {
 /* Grid View */
 #directory.grid-view {
   display: grid;
-  grid-template-columns: 1fr; /* One column by default (small screens) */
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
-
 
 /* List View */
 #directory.list-view {
@@ -126,17 +124,15 @@ main {
   padding: 1rem;
 }
 
-/* Zebra striping */
 #directory.list-view .company-card:nth-child(even) {
   background-color: #eafdfd;
 }
 
-/* Hide images in list view */
 #directory.list-view .company-card img {
   display: none;
 }
 
-/* Company card shared styling */
+/* Company Card Shared */
 .company-card {
   background-color: white;
   padding: 1rem;
@@ -159,6 +155,60 @@ main {
   margin: 0.3rem 0;
 }
 
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 100, 0, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #014421;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #026c26;
+}
+
 footer {
   background-color: #006400;
   color: white;
@@ -170,5 +220,206 @@ footer {
 footer a {
   color: #ffd700;
   text-decoration: none;
+}
+
+.weather-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #eafdfd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.current-weather,
+.weather-forecast {
+  flex: 1 1 300px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.weather-box h3 {
+  background-color: #333;
+  color: white;
+  margin: -1rem -1rem 1rem;
+  padding: 0.5rem;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.1rem;
+}
+
+/* Weather icon styling */
+#weather-icon {
+  display: block;
+  margin: 0.5rem 0;
+  width: 60px;
+  height: auto;
+}
+
+/* Responsive stacking behavior */
+@media (max-width: 640px) {
+  .weather-box {
+    flex-direction: column;
+  }
+}
+.home-section {
+  margin: 2rem;
+}
+
+.home-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-section p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.weather-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.weather-box > div {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.weather-box h3 {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem;
+}
+
+.events ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.events li {
+  margin-bottom: 0.5rem;
+}
+.spotlight-card {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.spotlight-card img {
+  max-width: 80px;
+  height: auto;
+  margin: 0.5rem 0;
+}
+.spotlight-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+/* General Footer Styles (for all screen sizes, including mobile) */
+.site-footer {
+    background-color: #33691e; /* Dark green background as per your image */
+    padding: 25px 20px; /* Adjust padding as needed */
+    color: #fff; /* White text for contrast */
+    font-family: Arial, sans-serif; /* Or your preferred font */
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default for mobile */
+    align-items: center; /* Center items horizontally on mobile */
+    text-align: center; /* Center text within each section on mobile */
+    gap: 20px; /* Space between the footer sections */
+    line-height: 1.6; /* Improve readability */
+    font-size: 0.95em; /* Slightly smaller font for footer details */
+}
+
+.site-footer p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+.site-footer a {
+    color: #ffe082; /* Yellow color for links as in your image */
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.site-footer .footer-heading {
+    font-weight: bold;
+    margin-bottom: 8px; /* Space below the heading */
+    font-size: 1.1em; /* Slightly larger for heading */
+}
+
+/* Social Media Icons */
+.site-footer .footer-social {
+    display: flex;
+    gap: 20px; /* Space between social icons */
+    margin: 10px 0; /* Vertical space for social icons */
+}
+
+.site-footer .footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px; /* Slightly larger icons */
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white circle */
+    color: white; /* White icon color */
+    font-size: 22px; /* Size of the social media icon */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.site-footer .footer-social a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* More transparent on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Responsive styles for larger screens */
+@media screen and (min-width: 768px) {
+    .site-footer {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+        text-align: left; 
+        padding: 40px 50px; 
+    }
+
+    .site-footer .footer-info,
+    .site-footer .footer-project-info {
+        flex: 1; 
+        max-width: 33%; /* Each column roughly takes 1/3 of the space */
+    }
+
+    .site-footer .footer-social {
+        margin: 0 30px; /* Horizontal margin around social icons */
+        flex-shrink: 0; /* Prevent social section from shrinking */
+        align-self: flex-start; /* Align social icons to the top (with other columns) */
+        padding-top: 5px; /* Adjust vertical alignment if needed */
+    }
+
+    .site-footer .footer-info {
+        order: 1; /* Left column */
+    }
+
+    .site-footer .footer-social {
+        order: 2; /* Middle column */
+        text-align: center; /* Ensure icons remain centered in their block */
+    }
+
+    .site-footer .footer-project-info {
+        order: 3; /* Right column */
+    }
 }
 
