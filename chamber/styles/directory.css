@@ -4,6 +4,17 @@ body, h1, h2, h3, p, ul {
   padding: 0;
 }
 
+/* Prevent Font Awesome rotation error */
+:root {
+  --fa-rotate-angle: 0deg;
+}
+
+.rotate-45  { --fa-rotate-angle: 45deg; }
+.rotate-90  { --fa-rotate-angle: 90deg; }
+.rotate-180 { --fa-rotate-angle: 180deg; }
+.rotate-270 { --fa-rotate-angle: 270deg; }
+
+
 body {
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
