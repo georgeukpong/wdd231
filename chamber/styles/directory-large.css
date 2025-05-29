@@ -78,3 +78,8 @@
     word-break: break-word;
   }
 }
+
+/* ===== FIX: Font Awesome Rotation Issue ===== */
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0deg)) !important;
+}
