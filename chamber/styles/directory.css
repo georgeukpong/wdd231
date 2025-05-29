@@ -4,10 +4,6 @@ body, h1, h2, h3, p, ul {
   padding: 0;
 }
 
-:root {
-  --fa-rotate-angle: 0deg; /* Default fallback for Font Awesome rotate */
-}
-
 body {
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
