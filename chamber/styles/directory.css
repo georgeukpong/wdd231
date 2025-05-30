@@ -331,9 +331,9 @@ footer a {
   gap: 1rem;
 }
 
-/* General Footer Styles (for all screen sizes, including mobile) */
+/* General Footer Styles (mobile-first) */
 .site-footer {
-  background-color: #33691e; /* Dark green background */
+  background-color: #33691e;
   padding: 25px 20px;
   color: #fff;
   font-family: Arial, sans-serif;
@@ -344,10 +344,6 @@ footer a {
   gap: 20px;
   line-height: 1.6;
   font-size: 0.95em;
-}
-
-.site-footer p {
-  margin: 0;
 }
 
 .site-footer a {
@@ -365,14 +361,21 @@ footer a {
   font-size: 1.1em;
 }
 
-/* Social Media Icons */
-.site-footer .footer-social {
-  display: flex;
-  gap: 20px;
-  margin: 10px 0;
+/* Footer sections */
+.footer-info,
+.footer-social,
+.footer-project-info {
+  width: 100%;
 }
 
-.site-footer .footer-social a {
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -385,7 +388,37 @@ footer a {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.site-footer .footer-social a:hover {
+.footer-social a:hover {
   background-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
+}
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 768px) {
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-info,
+  .footer-social,
+  .footer-project-info {
+    width: 33%;
+  }
+
+  .footer-info {
+    align-items: flex-start;
+  }
+
+  .footer-social {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-project-info {
+    text-align: right;
+    align-items: flex-end;
+  }
 }
