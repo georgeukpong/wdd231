@@ -20,4 +20,31 @@ window.addEventListener("resize", () => {
   }
 });
 
+  // Set timestamp if field is present
+const timestampField = document.getElementById("timestamp");
+if (timestampField) {
+  timestampField.value = new Date().toISOString();
+}
+
+// Modal open buttons
+document.querySelectorAll("button[data-modal]").forEach(button => {
+  button.addEventListener("click", () => {
+    const modal = document.getElementById(button.dataset.modal);
+    if (modal) modal.style.display = "block";
+  });
+});
+
+// Modal close buttons
+document.querySelectorAll(".modal .close").forEach(closeBtn => {
+  closeBtn.addEventListener("click", () => {
+    closeBtn.closest(".modal").style.display = "none";
+  });
+});
+
+// Close modal on outside click
+window.addEventListener("click", event => {
+  if (event.target.classList.contains("modal")) {
+    event.target.style.display = "none";
+  }
+});
 
