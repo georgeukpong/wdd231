@@ -82,5 +82,98 @@
     word-break: break-word;
   }
 }
+/* styles/directory-large.css */
 
+@media (min-width: 1025px) { /* Adjust this breakpoint as needed for "large" */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for large screens */
+    gap: 20px; /* Adjust as needed */
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+    max-width: 1200px; /* Or whatever fits your design */
+    margin: 0 auto; /* Center the gallery */
+  }
 
+  /* Individual grid area assignments remain the same (important for overall layout) */
+  .gallery .card:nth-child(1) { grid-area: card1; }
+  .gallery .card:nth-child(2) { grid-area: card2; }
+  .gallery .card:nth-child(3) { grid-area: card3; }
+  .gallery .card:nth-child(4) { grid-area: card4; }
+  .gallery .card:nth-child(5) { grid-area: card5; }
+  .gallery .card:nth-child(6) { grid-area: card6; }
+  .gallery .card:nth-child(7) { grid-area: card7; }
+  .gallery .card:nth-child(8) { grid-area: card8; }
+
+  /* Default internal card layout for large screens: Image on Left, Text on Right */
+  .gallery .card {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Image column | Text content column */
+    grid-template-rows: auto 1fr auto; /* Top content | flexible space | button */
+    gap: 0.5rem 1rem;
+    align-items: start;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .gallery .card figure {
+    grid-column: 1; /* Image in first column */
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .gallery .card .info {
+    grid-column: 2; /* Text in second column */
+    grid-row: 1;
+  }
+
+  /*
+    Alternating Layout for EVEN-numbered cards: Text on Left, Image on Right
+    We use :nth-child(even) to target every second card.
+  */
+  .gallery .card:nth-child(even) {
+    grid-template-columns: 1fr 200px; /* Text column | Image column */
+  }
+
+  .gallery .card:nth-child(even) figure {
+    grid-column: 2; /* Move image to second column */
+    grid-row: 1;
+  }
+
+  .gallery .card:nth-child(even) .info {
+    grid-column: 1; /* Move text to first column */
+    grid-row: 1;
+  }
+
+  /* Button styling remains the same for both types of cards */
+  .gallery .card button {
+    grid-column: 1 / -1; /* Make button span both columns */
+    grid-row: 3; /* Place button in the third row (the last row) */
+    align-self: end;
+    justify-self: center;
+    width: calc(100% - 2rem);
+    margin-bottom: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .gallery .card button:hover {
+    background-color: #555;
+  }
+
+  /* Optional: Refine image sizing within the figure */
+  .gallery .card figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}

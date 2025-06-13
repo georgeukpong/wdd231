@@ -1,0 +1,52 @@
+/* styles/medium.css */
+
+@media (min-width: 641px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Gallery remains single column for medium screens */
+    gap: 20px; /* Adjust gap between cards */
+    padding: 1.5rem; /* Adjust padding around gallery */
+  }
+
+  /* Internal Card Layout: Image Left, Text Right, Button Bottom */
+  .gallery .card {
+    display: grid; /* Make the card itself a grid */
+    grid-template-columns: 200px 1fr; /* First column for image (200px), second for text (rest of space) */
+    grid-template-rows: auto 1fr auto; /* Row 1: Content (image/info), Row 2: Flexible space, Row 3: Button */
+    gap: 1rem; /* Gap between grid items within the card */
+    padding: 1rem; /* Padding inside the card */
+    align-items: start; /* Align content to the start of its grid area */
+  }
+
+  .gallery .card figure {
+    grid-column: 1; /* Image in the first column */
+    grid-row: 1; /* Image in the first row */
+    /* Remove padding from figure directly, let card padding handle it */
+    padding: 0;
+  }
+
+  .gallery .card .info {
+    grid-column: 2; /* Info (h2, p, address) in the second column */
+    grid-row: 1; /* Info in the first row */
+    padding: 0; /* Remove internal padding, padding already handled by card */
+  }
+
+  /* Ensure text elements within info don't add extra space */
+  .gallery .card .info h2 {
+    margin-top: 0;
+  }
+  .gallery .card .info p {
+    margin-bottom: 0.5em;
+  }
+  .gallery .card .info address {
+    margin-bottom: 0; /* No margin below address as button is in separate row */
+  }
+
+  .gallery .card button {
+    grid-column: 1 / -1; /* Button spans all columns (from start to end) */
+    grid-row: 3; /* Button in the third row (the last row) */
+    align-self: end; /* Align button to the bottom of its grid area */
+    justify-self: center; /* Center the button horizontally */
+    width: calc(100% - 2rem); /* Account for card padding */
+    margin: 0 1rem 1rem 1rem; /* Reset margin to ensure it's controlled by grid */
+  }
+}

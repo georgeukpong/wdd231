@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Zuma Rock",
+    "image": "images/zuma.webp",
+    "address": "Zuba, Abuja-Kaduna Expressway, Abuja",
+    "description": "A towering natural rock formation often referred to as the 'Gateway to Abuja'."
+  },
+  {
+    "title": "Millennium Park",
+    "image": "images/millennium.webp",
+    "address": "Maitama District, Abuja",
+    "description": "Abuja’s largest public park, known for its green spaces, walking paths, and family-friendly vibe."
+  },
+  {
+    "title": "Jabi Lake",
+    "image": "images/jabi.webp",
+    "address": "Jabi District, Abuja",
+    "description": "A scenic lake perfect for leisure boating, picnics, and waterfront relaxation."
+  },
+  {
+    "title": "National Mosque",
+    "image": "images/mosque.webp",
+    "address": "Central Business District, Abuja",
+    "description": "A stunning golden-domed mosque, open to visitors and known for its architectural beauty."
+  },
+  {
+    "title": "Art & Craft Village",
+    "image": "images/craft.webp",
+    "address": "Behind Sheraton Hotel, Abuja",
+    "description": "A hub for handmade crafts, carvings, textiles, and souvenirs reflecting Nigerian culture."
+  },
+  {
+    "title": "Magicland Amusement Park",
+    "image": "images/magicland.webp",
+    "address": "Adjacent to National Stadium, Abuja",
+    "description": "An amusement park offering rides, games, and fun activities for kids and families."
+  },
+  {
+    "title": "Usuma Dam",
+    "image": "images/usuma.webp",
+    "address": "Bwari Area Council, Abuja",
+    "description": "A peaceful dam surrounded by lush greenery, popular for hiking and quiet picnics."
+  },
+  {
+    "title": "National Christian Centre",
+    "image": "images/christian-centre.webp",
+    "address": "Central Area, Abuja",
+    "description": "A landmark inter-denominational church with impressive modern architecture and stained glass."
+  }
+]
