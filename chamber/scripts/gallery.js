@@ -14,7 +14,8 @@ fetch("data/gallery.json")
 
 card.innerHTML = `
   <figure>
-    <img src="${item.image}" alt="Image of ${item.title}">
+    <img src="${item.image}" alt="Image of ${item.title}" loading="lazy">
+
   </figure>
   <div class="info"> <h2>${item.title}</h2>
     <p>${item.description}</p>
