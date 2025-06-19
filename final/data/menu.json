@@ -1,0 +1,80 @@
+[
+  {
+    "category": "Main Courses",
+    "items": [
+      {
+        "name": "Spicy Jollof Delight",
+        "image": "images/jollof.webp",
+        "alt": "Jollof Rice",
+        "price": "₦2,500",
+        "description": "Classic jollof rice cooked in spicy tomato sauce, served with grilled chicken."
+      },
+      {
+        "name": "Egusi Soup & Pounded Yam",
+        "image": "images/egusi.webp",
+        "alt": "Egusi Soup",
+        "price": "₦3,000",
+        "description": "Rich melon seed soup with assorted meats, served with fluffy pounded yam."
+      },
+      {
+        "name": "Ofada Rice & Ayamase Sauce",
+        "image": "images/ofada.webp",
+        "alt": "Ofada Rice",
+        "price": "₦2,800",
+        "description": "Traditional Ofada rice paired with spicy green pepper stew and assorted meats."
+      }
+    ]
+  },
+  {
+    "category": "Sides & Snacks",
+    "items": [
+      {
+        "name": "Grilled Suya Platter",
+        "image": "images/suya.webp",
+        "alt": "Suya Meat",
+        "price": "₦2,000",
+        "description": "Spicy grilled beef skewers with onions and yaji pepper mix."
+      },
+      {
+        "name": "Sweet Puff-Puff Bites",
+        "image": "images/puffpuff.webp",
+        "alt": "Puff-Puff",
+        "price": "₦800",
+        "description": "Golden-brown puff-puff balls, sweet and soft on the inside."
+      },
+      {
+        "name": "Moi Moi Wraps",
+        "image": "images/moimoi.webp",
+        "alt": "Moi Moi",
+        "price": "₦1,200",
+        "description": "Steamed bean pudding with egg and fish, wrapped in traditional leaves."
+      }
+    ]
+  },
+  {
+    "category": "Local Specialties",
+    "items": [
+      {
+        "name": "Nkwobi Delicacy",
+        "image": "images/nkwobi.webp",
+        "alt": "Nkwobi Dish",
+        "price": "₦3,500",
+        "description": "Tender cow foot seasoned with traditional spices and palm oil sauce."
+      },
+      {
+        "name": "Okra Soup & Swallow",
+        "image": "images/okra.webp",
+        "alt": "Okra Soup",
+        "price": "₦2,700",
+        "description": "Savory okra soup with fish and meat, paired with your choice of swallow."
+      },
+      {
+        "name": "Beans & Dodo Combo",
+        "image": "images/beansdodo.webp",
+        "alt": "Beans and Plantain",
+        "price": "₦1,900",
+        "description": "Mashed beans porridge served with golden fried plantains."
+      }
+    ]
+  }
+]

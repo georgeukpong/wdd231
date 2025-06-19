@@ -1,0 +1,13 @@
+{
+  "office": {
+    "name": "ElegantBites Catering",
+    "email": "info@elegantbites.com",
+    "phone": "+234123456789",
+    "address": "12 Gourmet Lane, Abuja, Nigeria",
+    "hours": {
+      "mondayToFriday": "9:00 AM – 6:00 PM",
+      "saturday": "10:00 AM – 4:00 PM",
+      "sunday": "Closed"
+    }
+  }
+}

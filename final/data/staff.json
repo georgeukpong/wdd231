@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Chef Grace",
+    "title": "Head Chef",
+    "image": "images/staff1.webp",
+    "alt": "Chef Grace – Head Chef"
+  },
+  {
+    "name": "James",
+    "title": "Catering Manager",
+    "image": "images/staff2.webp",
+    "alt": "James – Catering Manager"
+  },
+  {
+    "name": "Ada",
+    "title": "Event Coordinator",
+    "image": "images/staff3.webp",
+    "alt": "Ada – Event Coordinator"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Spicy Jollof Delight",
+    "image": "images/jollof.webp",
+    "alt": "Jollof Rice"
+  },
+  {
+    "name": "Grilled Suya Platter",
+    "image": "images/suya.webp",
+    "alt": "Suya Meat"
+  },
+  {
+    "name": "Sweet Puff-Puff Bites",
+    "image": "images/puffpuff.webp",
+    "alt": "Puff-Puff"
+  },
+  {
+    "name": "Egusi Soup & Pounded Yam",
+    "image": "images/egusi.webp",
+    "alt": "Egusi Soup"
+  },
+  {
+    "name": "Fried Plantain Medley",
+    "image": "images/plantain.webp",
+    "alt": "Fried Plantain"
+  },
+  {
+    "name": "Ofada Rice & Ayamase Sauce",
+    "image": "images/ofada.webp",
+    "alt": "Ofada Rice"
+  },
+  {
+    "name": "Moi Moi Wraps",
+    "image": "images/moimoi.webp",
+    "alt": "Moi Moi"
+  },
+  {
+    "name": "Nkwobi Delicacy",
+    "image": "images/nkwobi.webp",
+    "alt": "Nkwobi Dish"
+  },
+  {
+    "name": "Okra Soup & Swallow",
+    "image": "images/okra.webp",
+    "alt": "Okra Soup"
+  },
+  {
+    "name": "Beans & Dodo Combo",
+    "image": "images/beansdodo.webp",
+    "alt": "Beans and Plantain"
+  }
+]
