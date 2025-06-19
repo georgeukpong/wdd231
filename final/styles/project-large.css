@@ -1,5 +1,4 @@
 @media screen and (min-width: 768px) {
-  /* Body Layout */
   body {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -37,6 +36,8 @@
     display: flex;
     gap: 2rem;
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   nav#main-nav a {
@@ -53,7 +54,7 @@
 
   .cta-button {
     background-color: #c0392b;
-    color: #fff;
+    color: #fff8f0;
     padding: 0.6rem 1.2rem;
     border: none;
     font-weight: bold;
@@ -81,8 +82,8 @@
     position: absolute;
     top: 30%;
     left: 10%;
-    color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     padding: 1rem 2rem;
     border-radius: 8px;
   }
@@ -109,12 +110,12 @@
 
   .featured-menu {
     padding: 2rem 0;
+    text-align: center;
   }
 
   .featured-menu h2 {
     color: #c0392b;
     margin-bottom: 1.5rem;
-    text-align: center;
   }
 
   .dish-grid {
@@ -128,9 +129,9 @@
     flex: 1 1 30%;
     max-width: 300px;
     border-radius: 8px;
-    overflow: hidden;
     background-color: #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
 
   .dish-grid img {
@@ -146,7 +147,6 @@
     background-color: #fff8f0;
   }
 
-  /* Event Gallery from earlier message */
   .event-gallery {
     display: flex;
     align-items: center;
@@ -166,6 +166,7 @@
     margin: 0;
     border-radius: 10px;
     overflow: hidden;
+    background-color: #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
 
@@ -212,15 +213,5 @@
     font-style: normal;
   }
 }
-@media (min-width: 600px) {
-  .menu-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (min-width: 900px) {
-  .menu-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
