@@ -50,6 +50,32 @@ nav a.active{text-decoration:underline}
 .btn-filter:hover,
 .btn-filter.active{background:#c0392b;color:#fff}
 
+/* Filter buttons */
+.menu-page .category-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.menu-page .category-filters button {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #c0392b;
+  border-radius: 25px;
+  background: #fff;
+  color: #c0392b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-page .category-filters button.active,
+.menu-page .category-filters button:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
 /* Dish grid */
 .menu-category{display:grid;gap:2rem}
 @media(min-width:600px){.menu-category{grid-template-columns:repeat(2,1fr)}}
